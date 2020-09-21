@@ -23,13 +23,16 @@ namespace jarmupark
             double km1 = double.Parse(Console.ReadLine());
             lada.Megy(km1);
 
-            lada.Allapot();
+            Console.WriteLine("fsjlkdjfé: {0}", lada.KM);
+            Console.WriteLine("fsjlkdjfé: {0}", lada.MEGTEHETOKM);
 
             Console.Write("Mennyit megy a trabanrt? ");
             double km2 = double.Parse(Console.ReadLine());
             trabant.Megy(km2);
 
-            trabant.Allapot();
+            Console.WriteLine("fsjlkdjfé: {0}", trabant.KM);
+            Console.WriteLine("fsjlkdjfé: {0}", trabant.MEGTEHETOKM);
+
 
             Console.ReadKey();
         }
