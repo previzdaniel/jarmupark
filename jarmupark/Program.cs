@@ -10,6 +10,28 @@ namespace jarmupark
     {
         static void Main(string[] args)
         {
+            Auto lada = new Auto("piros", "Lada 2112", 11);
+            Auto trabant = new Auto("zöld", "Trabant 1.1", 8);
+
+            lada.Tankol(20);
+            trabant.Tankol(20);
+
+            lada.Allapot();
+            trabant.Allapot();
+
+            Console.Write("Mennyit megy a lada? ");
+            double km1 = double.Parse(Console.ReadLine());
+            lada.Megy(km1);
+
+            lada.Allapot();
+
+            Console.Write("Mennyit megy a trabanrt? ");
+            double km2 = double.Parse(Console.ReadLine());
+            trabant.Megy(km2);
+
+            trabant.Allapot();
+
+            Console.ReadKey();
         }
     }
 }
